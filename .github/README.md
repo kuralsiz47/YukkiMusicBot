@@ -55,7 +55,7 @@ For more information on the technologies that power the SiestaXMusic, check out 
 ## 🖇 Heroku Deployment
 
 <h4>Click the button below to deploy TaliaWinamp on Heroku!</h4>    
-<a href="https://dashboard.heroku.com/new?template=https://github.com/TechShreyash/SiestaXMusic"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a>
+<a href="https://dashboard.heroku.com/new?template=https://github.com/Iregullar/YukkiMusicBot"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a>
 
 > How to Deploy To Heroku? [Watch Tutorial](https://www.youtube.com/embed/NPTk-awGalY)
 
@@ -126,7 +126,7 @@ Reach out to the maintainer at one of the following places:
 
 If you want to say **thank you** or/and support active development of SiestaXMusic:
 
-- Add a [GitHub Star](https://github.com/TechShreyash/SiestaXMusic) to the project.
+- Add a [GitHub Star](https://github.com/Iregullar/YukkiMusicBot) to the project.
 - Fork the Repo :)
 
 ## 👨🏻‍💻 Authors & contributors
