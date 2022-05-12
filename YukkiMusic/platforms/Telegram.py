@@ -13,12 +13,12 @@ import time
 from datetime import datetime, timedelta
 from typing import Union
 
-from pyrogram.types import (InlineKeyboardButton,
+ . import (InlineKeyboardButton,
                             InlineKeyboardMarkup, Voice)
 
-import config
-from config import MUSIC_BOT_NAME, lyrical
-from YukkiMusic import app
+ config
+ config import MUSIC_BOT_NAME, lyrical
+  import 
 
 from ..utils.formatters import (convert_bytes, get_readable_time,
                                 seconds_to_min)
@@ -54,7 +54,7 @@ class TeleAPI:
     ):
         try:
             file_name = file.file_name
-            if file_name is None:
+             file_name is :
                 file_name = (
                     "Telegram Audio File"
                     if audio
@@ -147,19 +147,21 @@ class TeleAPI:
                     completed_size = convert_bytes(current)
                     speed = convert_bytes(speed)
                     text = f"""
-**{MUSIC_BOT_NAME} Telegram Medya İndiricisi**
-**Toplam Dosya boyutu:** {total_size}
-**Tamamlandı:** {completed_size} 
-**Yüzde:** {percentage[:5]}%
-**Hız:** {speed}/s
-**Süre:** {eta}"""
+**{MUSIC_BOT_NAME} Telegram Media Downloader**
+
+**Total FileSize:** {total_sizetotal_size}
+**Completed:** {completed_size} 
+**Percentage:** {percentage[:5]}%
+
+**Speed:** {speed}/s
+**ETA:** {eta}"""
                     try:
-                        await mystic.edit_text(text, reply_markup=upl)
+                         awaitmystic.edit_text(text, reply_markup=upl)
                     except:
                         pass
                     left_time[
                         message.message_id
-                    ] = datetime.now() + timedelta(seconds=self.sleep)
+ ] = datetime.now() + timedelta(seconds=self.sleep)
 
             speed_counter[message.message_id] = time.time()
             left_time[message.message_id] = datetime.now()
@@ -171,7 +173,7 @@ class TeleAPI:
                     progress=progress,
                 )
                  awaitmystic.edit_text(
-                    "Başarıyla indirildi.. Şimdi dosya işleniyor"
+                    "Successfully Downloaded.. Processing file now"
                 )
                 downloader.pop(message.message_id)
             except:
@@ -198,6 +200,6 @@ class TeleAPI:
              returnFalse
         verify = lyrical.get(mystic.message_id)
          ifnot verify:
-             returnFalse
+            return False
         lyrical.pop(mystic.message_id)
-         returnTrue
+        return True
