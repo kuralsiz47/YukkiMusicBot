@@ -80,7 +80,7 @@ async def gen_thumb(videoid):
         y2 = Ycenter + 250
         logo = youtube.crop((x1, y1, x2, y2))
         logo.thumbnail((520, 520), Image.ANTIALIAS)
-        logo = ImageOps.expand(logo, border=15, fill="white")
+        logo = ImageOps.expand(logo, border=15, fill="yellow")
         background.paste(logo, (50, 100))
         draw = ImageDraw.Draw(background)
         font = ImageFont.truetype("assets/font2.ttf", 40)
@@ -90,14 +90,14 @@ async def gen_thumb(videoid):
         para = textwrap.wrap(title, width=32)
         j = 0
         draw.text(
-            (5, 5), f"{MUSIC_BOT_NAME}", fill="white", font=name_font
+            (5, 5), f"{MUSIC_BOT_NAME}", fill="yellow", font=name_font
         )
         draw.text(
             (600, 150),
-            "NOW PLAYING",
-            fill="white",
+            "Talia Winamp",
+            fill="yellow",
             stroke_width=2,
-            stroke_fill="white",
+            stroke_fill="yellow",
             font=font2,
         )
         for line in para:
@@ -106,9 +106,9 @@ async def gen_thumb(videoid):
                 draw.text(
                     (600, 340),
                     f"{line}",
-                    fill="white",
+                    fill="yellow",
                     stroke_width=1,
-                    stroke_fill="white",
+                    stroke_fill="yellow",
                     font=font,
                 )
             if j == 0:
@@ -116,9 +116,9 @@ async def gen_thumb(videoid):
                 draw.text(
                     (600, 280),
                     f"{line}",
-                    fill="white",
+                    fill="yellow",
                     stroke_width=1,
-                    stroke_fill="white",
+                    stroke_fill="yellow",
                     font=font,
                 )
 
@@ -130,7 +130,7 @@ async def gen_thumb(videoid):
         )
         draw.text(
             (600, 500),
-            f"Duration : {duration[:23]} Mins",
+            f"Süre : {duration[:23]} Saniye",
             (255, 255, 255),
             font=arial,
         )
